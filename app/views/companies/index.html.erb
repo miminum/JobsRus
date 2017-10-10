@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Companies</h1>
+<h2>All</h2>
+  <%= render @companies %>
+
+  <h2>Finance</h2>
+  <%= render @finance_companies %>
+
+  <h2>Productivity</h2>
+  <%= render @productivity_companies %>
+
+  <h2>Ecommerce</h2>
+  <%= render @ecommerce_companies %>
+
+  <h2>Hiring</h2>
+  <%= render @companies_hiring %>
+
+  <h2>Not Hiring (Hiring')</h2>
+  <%= render @companies_not_hiring %>
+
+  <h2>Finance &#8745; Hiring</h2>
+  <%= render @finance_companies_hiring %>
+
+  <h2>Ecommerce &#8746; Utility</h2>
+  <%= render @ecommerce_or_utility_companies %>
+
+  <h2>None finance companies &#8745; Hiring</h2>
+  <%= render @non_finance_companies_hiring %>
+  
+
+  
+  
+<br>
+<%= link_to 'New Company', new_company_path %>

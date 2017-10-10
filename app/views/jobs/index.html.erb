@@ -1,0 +1,63 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Jobs</h1>
+
+<details>
+  <summary>
+    <h2>All</h2>
+  </summary> 
+  <%= render @jobs %>
+</details>
+
+<details>
+  <summary>
+    <h2>At Xero</h2>
+  </summary>
+    <%= render @xero_jobs %>
+</details>
+
+<details>
+  <summary>
+    <h2>Front-End Jobs</h2>
+  </summary> 
+    <%= render @front_end_jobs %>
+</details>
+
+<details>
+  <summary>
+    <h2>Full Stack Jobs (Front End ^ Back End)</h2>
+  </summary> 
+    <%= render @full_stack_jobs %>
+</details>
+
+<details>
+  <summary>
+    <h2>I hate back-end (back-end')</h2>
+  </summary> 
+    <%= render @i_hate_back_end_jobs %>
+</details>
+
+<details>
+  <summary>
+    <h2>Xero or Atlassian (Atlassion Jobs U Xero Jobs)</h2>
+  </summary> 
+    <%= render @xero_or_atlassian_jobs %>
+</details>
+
+<details>
+  <summary>
+    <h2>Non finance full stack jobs(Full Stack - finance jobs)</h2>
+  </summary> 
+    <%= render @non_finance_full_stack_jobs %>
+</details>
+
+
+<details>
+  <summary>
+    <h2>Javascript</h2>
+  </summary> 
+    <%= render @javascript_jobs %>
+</details>
+<br>
+
+<%= link_to 'New Job', new_job_path %>
